@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>XIN CHAO</h2>
+<textarea cols="100" rows="10" id="textHere" onkeydown="faketext()"></textarea>
+<script>
+    function faketext() {
+        let input = document.getElementById("textHere").value;
+        let string = ['M', 'A', 'Y', 'N', 'G', 'U', 'N', 'H', 'U', 'B', 'O'];
+        let result = "";
+        if (input.length > 0) {
+            for (let i = 0; i < input.length; i++) {
+                result = result + string[i];
+                if (i === 11) {
+                    document.getElementById('textHere').value = "";
+                    result = "";
+                }
+
+            }
+        }
+        document.getElementById('textHere').value = result;
+        result = "";
+        setTimeout("fakeText()", 1);
+    }
+</script>
+</body>
+</html>
