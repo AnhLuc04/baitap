@@ -5,4 +5,13 @@
 }
 .b{
     background-color: white;
+    width: 40px;
+    height: 40px;
+}
+table{
+    background-color: yellow;
+}
+.c{
+    width: 40px;
+    height: 40px;
 }
