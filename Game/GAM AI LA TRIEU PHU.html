@@ -2,9 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1><img src="imgall/trieuphu.jpeg" height="200" width="200"/></h1>
+<h1><big>Ai Là Triệu Phú ?</big></h1>
+<div id="each-question" class="row">
+    <table>
+        <div id="contain">
+            <button type="button" onclick="display()">Play</button>
+        </div>
+        <input id="question" type="button" value="Question">
+        <tr>
+            <td>
+                <input type="button" id="boxA" class="box" onclick="getRightAnswer(this.value)" value="A"></input>
+            </td>
+            <td>
+                <input type="button" id="boxB" class="box" onclick="getRightAnswer(this.value)" value="B"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="boxC" class="box" onclick="getRightAnswer(this.value)" value="B"></input>
+            </td>
+            <td>
+                <input type="button" id="boxD" class="box" onclick="getRightAnswer(this.value)" value="C"></input>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <button type="button" class="btn btn-danger" onclick="Stop()">Dừng cuộc chơi</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="button" onclick="resetgame()">Reset</button>
+                </div>
+            </td>
+            <td>
+                <div id="displaybtn1">
+                    <button type="button" class="btn btn-info" onclick="isUser5050()">50 : 50</button>
+                </div>
+            </td>
+            <td>
+                <div id="displaybtn2">
+                    <button type="button" class="btn btn-primary" onclick="askAudience()">Hỏi khán giả</button>
+                </div>
+            </td>
+            <td>
+                <div id="displaybtn3">
+                    <button type="button" onclick="call_friend()">Call</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <div class="absolute"></div>
+        <div class="random">
+            <div id="display1"></div>
+            <div id="display2"></div>
+            <div id="display3"></div>
+            <div id="display4"></div>
+            <div id="display5"></div>
+        </div>
+    </div>
+    <div>
+<!--        <div class="absolute"></div>-->
+<!--        <div class="random1" id="import0"></div>-->
+<!--        <div class="random1" id="import1"></div>-->
+        <div class="random1" id="import2">100.000VND</div>
+        <div class="random1" id="import3">200.000VND</div>
+        <div class="random1" id="import4">300.000VND</div>
+        <div class="random1" id="import5">400.000VND</div>
+        <div class="random1" id="import6">500.000VND</div>
+        <div class="random1" id="import7">1.000.000VND</div>
+        <div class="random1" id="import8">1.500.000VND</div>
+        <div class="random1" id="import9">3.000.000VND</div>
+        <div class="random1" id="import10">5.000.000VND</div>
+        <div class="random1" id="import11">10.000.000VND</div>
+        <div class="random1" id="import12">15.000.000VND</div>
+        <div class="random1" id="import13">30.000.000VND</div>
+        <div class="random1" id="import14">50.000.000VND</div>
+        <div class="random1" id="import15">100.000.000VND</div>
+        <div class="random1" id="import16">150.000.000VND</div>
+
+    </div>
+    <div>
+        <div class="absolute"></div>
+        <div class="random2">
+            <div id="import0"></div>
+            <div id="import1"></div>
+        </div>
+    </div>
+</div>
+</div>
+<link rel="stylesheet" href="Gam AI LA TRIEU PHU.css">
+<script src="GAM AI LA TRIEU PHU.js"></script>
 </body>
 </html>
